@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <title>Charlotte Manetta | Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-template.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+ <header>
+    <!--<img src="#" alt="logo"/>-->
+    <nav class="main">
+      <ul>
+          <li><a href="index.html">ABOUT ME</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">MY PROJECTS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <h1>CSS: CLASSIFY OR IDENTIFY</h1>
+  <h2>POSTED SUN 4/19/2015</h2>
+
+
+  <section>
+    <p>
+      It turns out that classes and ID's are one of the concepts in CSS that came most naturally to me--so it hopefully it will be easy for me to explain them. Both features allow you to pick out particular elements from your HTML and style them without impacting the rest of the content with that tag so they are dead useful.
+    </p>
+    <h3>THE BASICS</h3>
+    <p>CSS rules are start reference an HTML tag from the document and specifies certain formatting. Here is a CSS rule and a translation:</p>
+    <p class="code">h1 { font-size= 72px; } <br>// Take anything from the HTML document tagged with h1 and change the type size to 72 pixels.</p>
+    <p>What if I have a bunch of h1 titles for different sections that I would like to be different colors or I have one pesky list item that needs to be italicised when the others do not? Well thats where classes and ID's come in. Let's start with classes...</p>
+    <h3>CLASSES</h3>
+    <p>Classes can assigned in the HTML to multiple elements that are receiving the same treatment. Lets say we have a bunch of things on our page that need to purple and centered so we are going to put them in a class called "special". Our HTML might look like this:
+    <p class="code">&lt;h1 class="special"&gt;This text is special&lt;/h1&gt;<br>
+    &lt;p class="special"&gt;This text is also special even though its a paragraph and not an h1!&lt;/p&gt;<br>
+    &lt;h1 class="special"&gt;I can use this special class again! In fact I can use it as many times as I want in my page.&lt;/h1&gt;</p>
+    <p class="code">.special { color= purple; text-align: center; }</p>
+    <h3>ID's</h3>
+    <p>ID's are unique--as in there is only one on the page. ID's are best for styling exceptions to the rule. Let's say I have a navigation list  where each link goes to a page about a specific soccer player. Then right in the middle of it I have to reference a book title that will link to the publisher's site. To indicate to the user that its a book title and not another seciton of my site I want to italicize it.
+    </p>
+    <p class="code">&lt;li&gt;MESSI&lt;/li&gt;<br>
+      &lt;li&gt;RONALDO&lt;/li&gt;<br>
+      &lt;li id="book"&gt;Twenty-Two Foreigners in Funny Shorts&lt;/li&gt;<br>
+      &lt;li&gt;ZLATAN&lt;/li&gt;
+    </p>
+    <p class="code">#book { font-style= italic; }</p>
+    <h3>THEY'RE NOT JUST FOR CSS</h3>
+    <p>This is just the beginning of what classes and ID's are handy for. Once we get into JavaScript they are used for all sorts of things becuas they can target particular elements on the page with a high level of specificity.
+    </p>
+  </section>
+</main>
+
