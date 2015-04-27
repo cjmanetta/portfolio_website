@@ -11,7 +11,7 @@ body {
   margin-left: 20px;
 }
 
-a {
+a, li {
 color: #646464;
 text-decoration: none;
 font-size: 14px;
@@ -58,10 +58,22 @@ article a:hover, a:active {
   border: 1px dotted #646464;
   font-family: consolas,"courier new",monospace;
   padding: 10px;
+  clear: both;
 }
 
-h1, h2, h3, a {
+img {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+}
+
+h1, h2, h3, a, li {
   font-family: 'Montserrat', sans-serif;
+}
+
+.body_link {
+  color: #F05B34;
 }
 
 h1 {
@@ -91,7 +103,12 @@ h3 {
 
   font-size: 14px;
   color: #F05B34;
+  margin-bottom: -12px;
 
+}
+
+.listing {
+  margin-bottom: 12px;
 }
 
 #blogIntro {
