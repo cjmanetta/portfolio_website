@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Charlotte Manetta | Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-template.css">
+  <link rel="stylesheet" type="text/css" href="blog-template.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+ <header>
+    <!--<img src="#" alt="logo"/>-->
+    <nav class="main">
+      <ul>
+          <li><a href="../index.html">ABOUT ME</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">MY PROJECTS</a></li>
+          <li><a href="blog-home.html">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <h1>MAP</h1>
+  <h2>SUN 5/3/2015</h2>
+  <section>
+    <p>
+    </p>
+    <h3></h3>
+    <p>So far in my limited experience with Ruby I've found that if I have a feeling that a certain functionality should be built in to the lanuguage it usually is. And more times than not it lives in the Enumerable module. Today I'm going to get up close and personal with an enumerable method called map.</p>
+    <p>It's a workhorse of a method that is incredibly complicated to explain in layman's terms. Just kidding, its very simple which is what makes it so darn useful. It takes the object that is its receiver, yields its contents to a code block one at a time and then returns a new object (an array). Thats it!</p>
+    <p>Let's say I want to write a program that stores commonly used insults that I yell at the players during a soccer game. Sometimes I need to yell the insults loudly because everyone knows that the players can hear you through the TV right? So in that case I need my insults to be all caps. But I want to save both the regular insults and the loud ones so that I am prepared for whatever the game may bring.</p>
+    <p class="code">insults = ["Messi is too good, he must be an alien", "Neymar looks like he is twelve", "Cristiano Ronaldo is a big fat cry baby"]</br>loud_insults = insults.map {|player| player.upcase} </br>#=> ["MESSI IS TOO GOOD, HE MUST BE AN ALIEN", "NEYMAR LOOKS LIKE HE IS TWELVE", "CRISTIANO RONALDO IS A BIG FAT CRY BABY"]</p>
+    <p>So how is it different from each you ask? Well each does everything I said up there except return a new object. Each returns its reciever. Here is the same example with each.</p>
+    <p class="code">insults = ["Messi is too good, he must be an alien", "Neymar looks like he is twelve", "Cristiano Ronaldo is a big fat cry baby"]</br>loud_insults = insults.map {|player| player.upcase} </br>#=> ["Messi is too good, he must be an alien", "Neymar looks like he is twelve", "Cristiano Ronaldo is a big fat cry baby"]</p>
+    <p>There are of course a few other interesting things to note about map:</p>
+    <ul>
+      <li>1. its also called collect</li>
+      <li>2. it always returns an array even when the receiver is a hash</li>
+      <li>3. it has a destructive cousin, an array method called map! that changes the array in place--meaning that it alters its receiver and then returns it in its altered state</li>
+    </ul>
+  </section>
+</main>
+
