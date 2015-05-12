@@ -61,11 +61,15 @@ article a:hover, a:active {
   clear: both;
 }
 
-img {
+#cars {
   float: left;
   padding-right: 10px;
   padding-bottom: 10px;
   width: 300px;
+}
+
+.snippet {
+width: 600px;
 }
 
 h1, h2, h3, a, li {

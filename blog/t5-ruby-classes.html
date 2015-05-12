@@ -32,7 +32,7 @@
     <p>Instead, you realize that all of the animals are going to share certain types of data points like diet and exercise needs and that subsections of animals are going to have even more specific things in common. All of the monkeys will need to have climbing appartus, all of the animals with teeth will need to have information on their dental care etc.</p>
     <p>This is where classes come in. They are like templates that allow you to create new objects with all sorts of behaviors built-in to their definition. Classes are an integral part of creating organized and scalable code in Ruby.</p>
     <p>Lets walk through a simple example of a program for the national zoo with only a few types of data and one class just to see how it works...
-    <img src="https://gist.github.com/9cf675c2b54e72c97f99.git" alt="code snippet"/>
+    <p><img class="snippet" src="../imgs/class-snippet.png" alt="code snippet"/></p>
     <p>As you can see in this example I am creating a class Animal which accepts one or two arguments and includes a method setting the habitat to climbing apparatus if the type of animal is a primate. So lets break it down a bit.</p>
     <p>Attr_reader is setting up two instance variables habitat and diet which can be used by any method inside of the class and can be read using the dot notation on the object outside of the class -- ex. the call for monkey.diet outside of the class returns "fruit".</p>
     <p>The initialize method triggers when the new object is created--Animal.new-- and takes one or two arguments. By setting a default for diet it allows me to create a new animal object only passing in the type. The new object then has the value "fruit" for diet.</p>
