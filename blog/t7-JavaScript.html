@@ -27,11 +27,8 @@
 
   <section>
     <p</p>
-    <p>Let’s move onto modules. Our first exposure to modules, the enumerable module, was a bit confusing for me. Why would you need to have a whole separate construct for these methods? Why not just include them in the Hash, Array and Range classes?</p>
-    <h3>DRY</h3>
-    <p>The built-in classes, modules and methods in Ruby serve as a great example on this topic. What do hashes, arrays and ranges have in common? They are all collection objects that can be iterated over and thus some of their methods will be similar. So Ruby in all of its magnificent efficiency kills three birds with one stone. This ultimately reduces duplication and avoids confusion.</p>
-    <h3>SINGLE INHERITANCE &amp; OTHER NICE THINGS</h3>
-    <p>Another point of note about modules is that they are a nifty way around the single inheritance rule for classes in Ruby. They also allow you to group like behaviours that may not be associated with a particular class. Or you can spread them across several different classes without having to establish a parent/child relationship.</p>
+    <p>I got into programming by experimenting with JavaScript but I was a beginner at best. Now, coming back to it after diving into Ruby, I have a much better understanding of its strong and weak points. It is not as object oriented as Ruby, and as a result its approach to object construction seems more like something that was slightly jury rigged as opposed to being a building block of the language.</p>
+    <p>Classes and constructors are essentially templates for object creation. So Ruby has this special type of object that allows you to directly associate variables and methods with each new instance. JavaScript on the other hand allows you to use a function as a constructor to create variables that serve as properties which can point to data or functions or prototype properties. Whhhaaat! Even just comparing the concepts in plain English you can see that Ruby has the more elegant, natively object oriented solution. Lets compare syntax...</p>
     <h3>HOW DO YOU CHOOSE</h3>
     <p>So where do modules come in when writing your own classes and methods? In the Well Grounded Rubyist, David Black gives a couple of handy guidelines to help you make good choices. The most important one we already talked about, grouping like behaviors that may fit in in several different classes--and many times modules are named to indicate this, they are adjectives and objects are nouns by convention. Choosing modules and working with them effectively is a big topic, but hopefully this little intro will help jumpstart my understanding!</p>
   </section>
