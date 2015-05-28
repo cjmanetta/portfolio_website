@@ -1,0 +1,33 @@
+/* #main {
+    position: relative;
+} */
+
+nav {
+    width: 180px;
+    float: left;
+    border: 1px solid red;
+    position: fixed;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+#content {
+    float: left;
+    //position: absolute;
+    //left: 200px;
+    //padding: 5px;
+    width: 65%;
+    border: 1px solid green;
+}
+
+footer {
+    clear: right;
+    position: static;
+    bottom: 0px;
+    border: 1px solid lime;
+    width: 500px;
+}
