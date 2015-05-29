@@ -7,7 +7,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #FFFFC0;
   font-size: 16px;
-  line-height: 24px;
+  //line-height: 16px;
   margin-left: 20px;
 }
 
@@ -80,3 +80,16 @@ article {
   height: 100px;
 }
 
+.blogListing {
+  clear: both;
+}
+
+ article:hover, article:active {
+  background-color: #92BDAB;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+article a:hover, a:active {
+  color: inherit;
+}
