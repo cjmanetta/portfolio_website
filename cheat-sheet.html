@@ -1,97 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
   <meta name="author" content= "SitePoint">
-  <link rel="sytlesheet" href="cheat-sheet.css?v1.0">
-
+  <link rel="stylesheet" href="cheat-sheet.css">
+   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div id="main">
-  <header>
-      <h1>Ruby Enumerables Cheat Sheet</h1>
-  </header>
-  <nav>
-      <ul>
-          <li><a href="#each_with_index">each_with_index</a></li>
-          <li><a href="#max">max</a></li>
-          <li><a href="#min">min</a></li>
-          <li><a href="#include">include?</a></li>
-          <li><a href="#injectreduce">inject/reduce</a></li>
-          <li><a href="#mapcollect">map/collect</a></li>
-          <li><a href="#each_slice">each_slice</a></li>
-      </ul>
-  </nav>
+  <main>
+    <header>
+      <nav class="main">
+        <ul>
+            <li><a href="index.html">ABOUT ME</a></li>
+            <li><a href="#">RESUME</a></li>
+            <li><a href="projects.html">MY PROJECTS</a></li>
+            <li><a href="blog-home.html">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <h1>RUBY ENUMERABLES CHEAT SHEET</h1>
+    </header>
 
-  <div id ="content">
-  <article id="each_with_index">
-      <h2>each_with index</h2>
-      <p>Calls block with two arguments, the item and its index, for each item in enum. Given arguments are passed through to each().If no block is given, an enumerator is returned instead.</p>
-      <code>hash = {};<br>
-          array = ["seal", "giraffe", "squirrel"]<br>
-          array.each_with_index { |item, index| hash[item] = index }<br>
-          puts hash.inspect #=> {"seal"=>0, "giraffe"=>1, "squirrel"=>2}</code>
-  </article>
+    <nav class="buttons">
+        <ul>
+            <li><a href="#each_with_index">each_with_index</a></li>
+            <li><a href="#max">max</a></li>
+            <li><a href="#min">min</a></li>
+            <li><a href="#include">include?</a></li>
+            <li><a href="#injectreduce">inject/reduce</a></li>
+            <li><a href="#mapcollect">map/collect</a></li>
+            <li><a href="#each_slice">each_slice</a></li>
+        </ul>
+    </nav>
+    <section>
+      <article id="each_with_index">
+          <h2>EACH WITH INDEX</h2>
+          <p>Calls block with two arguments, the item and its index, for each item in enum. Given arguments are passed through to each().If no block is given, an enumerator is returned instead.</p>
+          <div id="codebox">
+            <code>hash = {};<br>
+                  array = ["seal", "giraffe", "squirrel"]<br>
+                  array.each_with_index { |item, index| hash[item] = index }<br>
+                  puts hash.inspect #=> {"seal"=>0, "giraffe"=>1, "squirrel"=>2}
+              </code>
+          </div>
+      </article>
 
-  <article id="max">
-      <h2>max</h2>
-      <p>Returns the object in enum with the maximum value. The first form assumes all objects implement Comparable; the second uses the block to return a &lt;=> b.</p>
-      <code>a = ["albatross", "dog", "horse"]<br>
-            a.max(2) #=> ["horse", "dog"]<br>
-            a.max(2) {|a, b| a.length &lt;=> b.length }  #=> ["albatross", "horse"]</code>
-  </article>
+      <article id="max">
+          <h2>MAX</h2>
+          <p>Returns the object in enum with the maximum value. The first form assumes all objects implement Comparable; the second uses the block to return a &lt;=> b.</p>
+          <div id="codebox">
+            <code>
+              a = ["albatross", "dog", "horse"]<br>
+              a.max(2) #=> ["horse", "dog"]<br>
+              a.max(2) {|a, b| a.length &lt;=> b.length }  #=> ["albatross", "horse"]
+              </code>
+            </div>
+      </article>
 
-   <article id="min">
-      <h2>min</h2>
-      <p>Returns the object in enum with the minimum value. The first form assumes all objects implement Comparable; the second uses the block to return a &lt;=> b.</p>
-      <code>a = ["albatross", "dog horse"]<br>
-            a.min(2) #=> ["albatross", "dog"]<br>
-            a.min(2) {|a, b| a.length &lt;=> b.length }  #=> ["dog", "horse"]</code>
-  </article>
+      <article id="min">
+          <h2>MIN</h2>
+          <p>Returns the object in enum with the minimum value. The first form assumes all objects implement Comparable; the second uses the block to return a &lt;=> b.</p>
+        <div id="codebox">
+              <code>
+                a = ["albatross", "dog horse"]<br>
+                a.min(2) #=> ["albatross", "dog"]<br>
+                a.min(2) {|a, b| a.length &lt;=> b.length }  #=> ["dog", "horse"]
+              </code>
+        </div>
+      </article>
 
-    <article id="include">
-      <h2>include?</h2>
-      <p>Returns true if any member of enum equals obj. Equality is tested using ==.</p>
-      <code>(1..10).include?(2) #=> true</code>
-    </article>
+        <article id="include">
+          <h2>INCLUDE?</h2>
+          <p>Returns true if any member of enum equals obj. Equality is tested using ==.</p>
+          <div id="codebox">
+            <code>(1..10).include?(2) #=> true</code>
+          </div>
+        </article>
 
-    <article id="injectreduce">
-      <h2>inject/reduce</h2>
-      <p>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.</p>
-      <code>                            (5..10).reduce(:+)<br>
-         #=> 45<br>
-   (5..10).inject { |sum, n| sum + n }<br>              #=> 45</code>
-    </article>
+        <article id="injectreduce">
+          <h2>INJECT/REDUCE</h2>
+          <p>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.</p>
+          <div id="codebox">
+            <code>
+              (5..10).reduce(:+)<br>
+               #=> 45<br>
+              (5..10).inject { |sum, n| sum + n }<br>
+              #=> 45
+            </code>
+          </div>
+        </article>
 
-    <article id="mapcollect">
-      <h2>map/collect</h2>
-      <p>Returns a new array with the results of running block once for every element in enum. If no block is given, an enumerator is returned instead.</p>
-      <code>(1..4).map { |i| i*i } <br>
-          #=> [1, 4, 9, 16] <br>
+        <article id="mapcollect">
+          <h2>MAP/COLLECT</h2>
+          <p>Returns a new array with the results of running block once for every element in enum. If no block is given, an enumerator is returned instead.</p>
+          <div id="codebox">
+            <code>
+              (1..4).map { |i| i*i } <br>
+                #=> [1, 4, 9, 16] <br>
+                [3,6,9].collect { |i| i*i } <br>
+                => [9, 36, 81]<br><br>
+                (1..4).collect { "cat"  }  <br>
+                #=> ["cat", "cat", "cat", "cat"]
+            </code>
+          </div>
+        </article>
 
-          [3,6,9].collect { |i| i*i } <br>
-          => [9, 36, 81]<br><br>
-
-          (1..4).collect { "cat"  }  <br>
-          #=> ["cat", "cat", "cat", "cat"]
-          </code>
-    </article>
-
-    <article id="each_slice">
-        <h2>each_slice</h2>
-      <p>Iterates the given block for each slice of n elements. If no block is given, returns an enumerator.</p>
-      <code>(1..10).each_slice(3) { |a| p a }<br>
-# outputs below<br>
-[1, 2, 3]<br>
-[4, 5, 6]<br>
-[7, 8, 9]<br>
-[10]</code>
-    </article>
-  </div>
+        <article id="each_slice">
+          <h2>EACH SLICE</h2>
+          <p>Iterates the given block for each slice of n elements. If no block is given, returns an enumerator.</p>
+          <div id="codebox">
+            <code>
+              (1..10).each_slice(3) { |a| p a }<br>
+              # outputs below<br>
+              [1, 2, 3]<br>
+              [4, 5, 6]<br>
+              [7, 8, 9]<br>
+              [10]
+            </code>
+          </div>
+        </article>
+    </section>
+  </main>
   <footer>
       <p>Content taken from <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html">Ruby Docs</a>
   </footer>
-  </div>
+
 </body>

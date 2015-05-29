@@ -1,33 +1,115 @@
-/* #main {
+html {
+  background-color: #79BDAB;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #646464;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #F05B34;
+  letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #F05B34;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: -12px;
+    border-bottom: 1px dotted #646464;
+    padding-bottom: 2px;
+}
+
+#codebox {
+    background-color: #92BDAB;
+    padding: 5px 5px 5px 20px;
+    border-radius: 6px;
+}
+
+code {
+  font-family: "courier new",monospace;
+  font-size: 16px;
+  line-height: -2px;
+}
+
+main {
     position: relative;
-} */
+}
 
-nav {
-    width: 180px;
-    float: left;
-    border: 1px solid red;
+h1, nav.buttons, section, footer {
+    padding: 10px;
+}
+
+a, li {
+color: #646464;
+text-decoration: none;
+font-size: 14px;
+}
+
+a:hover, a:active {
+  border-bottom: 2px solid #F05B34;
+  color: #F05B34;
+}
+
+nav.main {
+  margin: 0 auto 0 30px;
+  width: 100%;
+}
+
+nav.main ul li {
+  padding: 30px;
+  text-align: center;
+  display: inline;
+
+}
+
+nav.buttons {
     position: fixed;
-
+    margin-top: 20px;
 
 }
 
-nav ul li {
+ nav.buttons ul {
+    padding-left: 0px;
+ }
+
+nav.buttons ul li {
     list-style-type: none;
-
+    margin-bottom: 7px;
 }
-#content {
-    float: left;
-    //position: absolute;
-    //left: 200px;
-    //padding: 5px;
+
+nav.buttons ul li a {
+    font-size: 14px;
+    background-color: #FFFFC0;
+    border-radius: 8px;
+    padding: 3px 5px 3px 5px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #646464;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+  border-bottom: 2px solid #F05B34;
+  color: #F05B34;
+}
+
+section {
     width: 65%;
-    border: 1px solid green;
+    margin-left: 190px;
+    margin-bottom: 20px;
+    margin-top: -8px;
 }
 
 footer {
-    clear: right;
-    position: static;
-    bottom: 0px;
-    border: 1px solid lime;
-    width: 500px;
+    margin-left: 190px
 }
