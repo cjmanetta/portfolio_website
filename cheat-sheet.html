@@ -1,4 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content= "SitePoint">
+  <link rel="sytlesheet" href="cheat-sheet.css?v1.0">
 
+</head>
 <body>
   <div id="main">
   <header>
@@ -28,18 +37,18 @@
 
   <article id="max">
       <h2>max</h2>
-      <p>Returns the object in enum with the maximum value. The first form assumes all objects implement Comparable; the second uses the block to return a <=> b.</p>
+      <p>Returns the object in enum with the maximum value. The first form assumes all objects implement Comparable; the second uses the block to return a &lt;=> b.</p>
       <code>a = ["albatross", "dog", "horse"]<br>
             a.max(2) #=> ["horse", "dog"]<br>
-            a.max(2) {|a, b| a.length <=> b.length }  #=> ["albatross", "horse"]</code>
+            a.max(2) {|a, b| a.length &lt;=> b.length }  #=> ["albatross", "horse"]</code>
   </article>
 
    <article id="min">
       <h2>min</h2>
-      <p>Returns the object in enum with the minimum value. The first form assumes all objects implement Comparable; the second uses the block to return a <=> b.</p>
+      <p>Returns the object in enum with the minimum value. The first form assumes all objects implement Comparable; the second uses the block to return a &lt;=> b.</p>
       <code>a = ["albatross", "dog horse"]<br>
             a.min(2) #=> ["albatross", "dog"]<br>
-            a.min(2) {|a, b| a.length <=> b.length }  #=> ["dog", "horse"]</code>
+            a.min(2) {|a, b| a.length &lt;=> b.length }  #=> ["dog", "horse"]</code>
   </article>
 
     <article id="include">
@@ -80,7 +89,7 @@
 [7, 8, 9]<br>
 [10]</code>
     </article>
-          </div>
+  </div>
   <footer>
       <p>Content taken from <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html">Ruby Docs</a>
   </footer>
