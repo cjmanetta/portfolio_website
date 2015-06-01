@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Charlotte Manetta | Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-template.css">
+  <link rel="stylesheet" type="text/css" href="blog-template.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+ <header>
+    <!--<img src="#" alt="logo"/>-->
+    <nav class="main">
+      <ul>
+          <li><a href="../index.html">ABOUT ME</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">MY PROJECTS</a></li>
+          <li><a href="blog-home.html">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <h1>REEGEXP IN RUBY</h1>
+  <h2>Sun 5/31/2015</h2>
+
+
+  <section>
+    <p>We came accross regular expressions in the first week at DBC during our introduction to the command line. There have already been quite a few times in the first 8 weeks where I wanted to understand how Regexps worked in order to use them in my programs.</p>
+    <p>In the Rubyist David Black defines regexps as "a pattern of characters , a pattern that may or may not correctly predict (that is, match) a given string." He goes on to say that pattern matching is used ot set up conditional branching.</p>
+   <p>I have come across lots of uses of regexps during research and it seems like one of the hardest things is getting accustomed to reading them. Just like object and hash creation there is a literal constructor for instances of the Regexp class.</p>
+   <p class= "code">/abc/</p>
+   <p>Simple right? Not so fast, more complicated ones look like this:</p>
+   <p class="code">/\((\d{3})\)\s+(\d{3})-(\d{4})/</p>
+   <p>And that is just one for matching phone numbers. Black also says that we need to remember that although regexp contain characters, the most useful ones do not correspond to literal strings. Regular expressions are like a language unto themselves.</p>
+  </section>
+</main>
+
