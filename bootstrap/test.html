@@ -13,6 +13,10 @@
     <!-- Custom test-->
     <link href="css/custom-test.css" rel="stylesheet">
 
+    <!--google fonts-->
+      <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,10 +25,67 @@
     <![endif]-->
   </head>
   <body>
-    <div class= "container">
-      <h1>HELLO WORLD</h1>
-      <div>This is my first container</div>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-s-12 col-md-4">
+            <img class="img-circle" id="headshot" src="../imgs/headshot.jpg" alt="Charlotte Manetta"/>
+          </div>
+          <div class="col-s-12 col-md-8">
+            <h1>CHARLOTTE MANETTA</h1>
+            <p>DESIGNER | ASPIRING DEVELOPER | SOCCER COACH</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="container">
+      <header class="row">
+        <div class="col-md-4 col-lg-12">
+          <!--<img src="#" alt="logo"/>-->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div><!--end hamburger-->
+              <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                  <li role="presentation"><a href="index.html">ABOUT ME</a></li>
+                  <li role="presentation"><a href="#">RESUME</a></li>
+                  <li role="presentation"><a href="projects.html">MY PROJECTS</a></li>
+                  <li role="presentation"><a href="blog/blog-home.html">BLOG</a></li>
+                  <li role="presentation"><a href="#">CONTACT</a></li>
+                </ul>
+              </div><!--end collapse-->
+            </div><!--end container-fluid-->
+          </nav>
+        </div><!--end row 1 col defs-->
+      </header><!-- end row 1-->
+
+      <article class="row">
+          <p>I am a graphic designer and aspiring web developer located in the bay area. I am currently attending Dev Bootcamp and I expect to graduate in August 2015 with all of the skills necessary to become a full stack web developer.</p>
+          <p>I have a passion for beautiful and functional graphic design and five years of experience working in design, IT and customer service departments of a small company. I have been involved in every aspect of the design process from idea generation through to production and implementation. I am hoping to use my background in graphic design to offer a unique perspective in the world of web development.</p>
+      </article>
+      <footer class="row">
+        <div class="col-md-4">
+          <nav class="social">
+            <ul>
+              <li><a href="https://github.com/cjmanetta/cjmanetta.github.io"><img src="../imgs/github.svg" alt="github"/></a></li>
+              <li><a href="https://www.linkedin.com/in/charlottemanetta"><img src="../imgs/linkedin.svg" alt="linkedin"/></a></li>
+              <li><a href="https://twitter.com/cjmanetta"><img src="../imgs/twitter.svg" alt="twitter"/></a></li>
+              <li><a href="#"><img src="../imgs/google.svg" alt="google +"/></a></li>
+              <!--<li><a href="#"><img src="#" alt="hacker news"/></a></li>-->
+              <!--<li><a href="#"><img src="#" alt="blog"/></a></li>-->
+            </ul>
+          </nav>
+        </div>
+      </footer><!-- end row 2-->
+    </div><!-- end container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
