@@ -83,3 +83,7 @@ activate :deploy do |deploy|
 end
 
 activate :directory_indexes
+
+after_configuration do
+  sprockets.append_path 'lib/assets'
+end

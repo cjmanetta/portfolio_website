@@ -19,5 +19,5 @@ gem "middleman-deploy", "~> 1.0"
 # responsive images
 gem "middleman-automatic-clowncar"
 
-# portfolio generator
-gem "middleman-portfolio"
+gem "jquery-middleman"
+

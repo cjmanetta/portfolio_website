@@ -47,6 +47,8 @@ GEM
       uber (~> 0.0.14)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
+    jquery-middleman (3.1.2)
+      thor (>= 0.14, < 2.0)
     json (1.8.3)
     kramdown (1.9.0)
     listen (3.0.5)
@@ -88,8 +90,6 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
-    middleman-portfolio (1.0.1)
-      mini_magick (~> 4.2.10)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -98,7 +98,6 @@ GEM
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2015.1120)
-    mini_magick (4.2.10)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
@@ -150,11 +149,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jquery-middleman
   middleman (~> 3.4.0)
   middleman-automatic-clowncar
   middleman-deploy (~> 1.0)
   middleman-livereload (~> 3.1.0)
-  middleman-portfolio
   tzinfo-data
   wdm (~> 0.1.0)
 

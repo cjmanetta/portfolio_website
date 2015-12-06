@@ -1,9 +1,18 @@
 ---
 title: Welcome to Middleman
+projects:
+  - "project1"
+  - "project2"
+  - "project3"
 ---
 
 <div class="welcome">
   <h1>hello!</h1>
+  <button class="ui button">blahhhhh</button>
+  <% current_page.data.projects.each do |project| %>
+      <p><%= project.upcase %></p>
+  <% end %>
+
   <p class="doc">
   </p><!-- .doc -->
 </div><!-- .welcome -->
