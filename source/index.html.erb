@@ -1,18 +1,24 @@
 ---
 title: Welcome to Middleman
-projects:
-  - "project1"
-  - "project2"
-  - "project3"
+pages:
+  -
+    "about me": "index.html"
+    "resume": "resume.html"
+    "projects": "projects.html"
 ---
 
-<div class="welcome">
-  <h1>hello!</h1>
-  <button class="ui button">blahhhhh</button>
-  <% current_page.data.projects.each do |project| %>
-      <p><%= project.upcase %></p>
-  <% end %>
+<%= partial("partials/nav") %>
+<div class="ui two column vertically divided centered grid container">
+  <section class="row">
+    <article class="column">
+      <img class="ui medium circular image" src="images/headshot.png" alt="Charlotte Manetta">
+    </article>
+    <article class="column">
+      <button class="ui button">blahhhhh</button>
 
-  <p class="doc">
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    </article>
+  </section>
+  <section class="row">
+    <p>theres some stuff in here</p>
+  </section>
+</div>

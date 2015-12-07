@@ -1,0 +1,11 @@
+<nav class="ui pointing menu">
+    <% current_page.data.pages.each do |page| %>
+      <% page.each do |label, url| %>
+        <% if current_page.path == url %>
+          <a class="item active" href="<%= url %>"><%= label %></a>
+        <% else %>
+          <a class="item" href="<%= url %>"><%= label %></a>
+        <% end %>
+      <% end %>
+    <% end %>
+</nav>
