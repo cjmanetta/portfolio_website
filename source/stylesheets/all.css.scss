@@ -13,6 +13,11 @@ body {
   background: url("/images/background.png") center/100%;
 }
 
+.ui.segment {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .ui.menu {
   .item {
     font-family: $display-font;
@@ -23,6 +28,14 @@ body {
   }
 }
 
+.ui.text.container {
+  max-width: 50%;
+}
+
+.ui.cards > .card {
+  background: none;
+  border-width: 2px;
+}
 .ui.secondary.pointing.menu .active.item {
   border-image: url("/images/line.svg") 0 0 10 0 repeat;
   border-image-width: 12px;
@@ -36,6 +49,16 @@ h1,h3 {
   font-family: $display-font;
 }
 
+// .banner {
+//   font-size: 20em;
+//   color: white;
+//   z-index: -1;
+//   position: absolute;
+//   opacity: 0.45;
+//   margin: 0 auto;
+
+// }
+
 h3 {
   font-weight: 700;
   font-size: 2em;
@@ -45,23 +68,35 @@ h3 {
 }
 
 h1 {
-  font-size: 4em;
-  color: $orange;
+  font-size: 3em;
+  color: $purple;
   letter-spacing: 1px;
 }
 
-.headshot {
-  background: url("/images/headshot.png") no-repeat bottom left/35%;
+section {
+  margin-bottom: 50px;
 }
 
-.column.w400p {
-  max-width: 400px;
+.ui.vertical.stripe.segment.inverted {
+  background-image: url("/images/background.png"), linear-gradient( to bottom right, #0f7988, #c5e2bb);
+  opacity: 0.85;
+}
+
+.headshot {
+  border: 20px solid $orange;
+
 }
 
 i[class*="fa-"] {
-  font-size: 200%;
   color: #05756f;
+  }
+
+footer {
+  i[class*="fa-"] {
+  font-size: 200%;
+  }
 }
+
 
 a:hover, a:active, i[class*="fa-"]:hover, i[class*="fa-"]:active {
   color: $orange;
