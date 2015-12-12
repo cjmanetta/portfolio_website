@@ -1,11 +1,13 @@
-<section class="ui cards centered">
+<section class="ui cards centered"  id="projects">
   <% current_page.data.projects.each do |project, attrs| %>
     <div class="card">
+      <div class="content">
+        <div class="header"><%= attrs.name %></div>
+      </div>
       <div class="image">
         <img src="<%= attrs.screenshot %>">
       </div>
       <div class="content">
-        <div class="header"><%= attrs.name %></div>
         <div class="meta">
           <div class="ui label mini"><%= attrs.tag %></div>
         </div>
@@ -16,7 +18,7 @@
       <div class="extra content">
         <span class="right floated"><%= attrs.extra %></span>
         <span>
-          <a href="<%= attrs.github %>"><i class="fa fa-code"></i></a>
+          <a href="<%= attrs.github %>"><i class="fa fa-code"> code</i></a>
         </span>
       </div>
     </div>

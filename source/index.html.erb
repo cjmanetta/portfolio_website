@@ -23,21 +23,19 @@
 ---
 <main class="container">
 <%= partial("partials/nav") %>
-<div class="ui left rail">
-  <div class="ui segment">
-  <a href="https://github.com/cjmanetta"><i class="fa fa-github"></i>
-  <a href="https://www.linkedin.com/in/charlottemanetta"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
 
   <section class="ui vertical masthead center aligned">
-      <img class="ui circular centered image headshot medium" src="/images/headshot.png" alt="Charlotte Manetta">
-      <article class="ui text center aligned container">
+    <div class="ui left attached vertical compact secondary pointing menu">
+    <a class="item" href="https://github.com/cjmanetta"><i class="fa fa-github"></i>
+    <a class="item" href="https://www.linkedin.com/in/charlottemanetta"><i class="fa fa-linkedin"></i></a>
+  </div>
+      <img class="ui circular centered image headshot small" src="/images/headshot.png" alt="Charlotte Manetta">
+      <article class="ui text center aligned container" id="#about">
+
         <%= partial("partials/about") %>
       </article>
   </section>
-  <section class="ui vertical inverted stripe segment projects">
+  <section class="ui vertical inverted stripe segment projects" id="#projects">
     <%= partial("partials/projects") %>
   </section>
-  <%= partial("partials/footer") %>
 </main>

@@ -28,13 +28,22 @@ body {
   }
 }
 
+.ui.secondary.vertical.pointing.menu {
+  border: none;
+}
+
 .ui.text.container {
   max-width: 50%;
 }
 
-.ui.cards > .card {
-  background: none;
-  border-width: 2px;
+.ui.image.small {
+  width: 260px;
+  margin-top: -75px;
+}
+
+.ui.cards {
+ .card {
+  }
 }
 .ui.secondary.pointing.menu .active.item {
   border-image: url("/images/line.svg") 0 0 10 0 repeat;
@@ -49,26 +58,16 @@ h1,h3 {
   font-family: $display-font;
 }
 
-// .banner {
-//   font-size: 20em;
-//   color: white;
-//   z-index: -1;
-//   position: absolute;
-//   opacity: 0.45;
-//   margin: 0 auto;
-
-// }
-
 h3 {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
   color: $green;
   letter-spacing: 0.75px;
   margin-top: -8px;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: $purple;
   letter-spacing: 1px;
 }
@@ -83,7 +82,7 @@ section {
 }
 
 .headshot {
-  border: 20px solid $orange;
+  border: 10px solid $orange;
 
 }
 
