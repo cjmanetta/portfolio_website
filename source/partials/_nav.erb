@@ -1,6 +1,6 @@
 <nav class="ui secondary pointing menu">
   <div class="right menu">
-    <% current_page.data.pages.each do |page| %>
+    <% data.local_data.pages.each do |page| %>
       <% page.each do |label, url| %>
         <% if current_page.path == url %>
           <a class="item active nav-link" href="<%= url %>"><%= label %></a>

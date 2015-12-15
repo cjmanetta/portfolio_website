@@ -1,0 +1,21 @@
+:title: Charlotte Manetta
+:pages:
+  - about me: "#about"
+    projects: "#projects"
+    resume: "#resume"
+:projects:
+  :footie:
+    :name: footie
+    :tag: develop
+    :url: footie.herokuapp.com
+    :github: https://github.com/cjmanetta/footie
+    :screenshot: images/footie.png
+    :description: footie is a points tracking application built in Rails and React for managing contests or player progress over the course of a sports season. I developed it as a project for Dev Bootcamp during phases 2 and 3.
+    :extra: "Production Timeline: 3 weeks"
+  :smarttext:
+    :name: SmartText
+    :tag: develop
+    :github: https://github.com/amjacobowitz/SmartText
+    :screenshot: images/smarttext.png
+    :description: We developed an application that allows teachers to see students highlight supporting evidence for reading comprehension questions directly in the text on their screens.
+    :extra: "Production Timeline: 7 days"

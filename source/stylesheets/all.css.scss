@@ -36,15 +36,14 @@ body {
   max-width: 50%;
 }
 
+.ui.secondary.vertical.pointing.menu {
+  margin-top: 142px;
+}
 .ui.image.small {
   width: 260px;
-  margin-top: -75px;
+  margin-top: -175px;
 }
 
-.ui.cards {
- .card {
-  }
-}
 .ui.secondary.pointing.menu .active.item {
   border-image: url("/images/line.svg") 0 0 10 0 repeat;
   border-image-width: 12px;
