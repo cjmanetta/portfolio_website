@@ -8,9 +8,13 @@
         <img src="<%= attrs.screenshot %>">
       </div>
       <div class="content">
-        <div class="meta">
-          <div class="ui label mini"><%= attrs.tag %></div>
-        </div>
+        <% if !attrs.tags.empty? %>
+          <div class="meta">
+            <% attrs.tags.each do |tag| %>
+              <div class="ui label mini"><%= tag %></div>
+            <% end %>
+          </div>
+        <% end %>
         <div class="description">
           <%= attrs.description %>
         </div>
