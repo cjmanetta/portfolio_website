@@ -1,56 +1,89 @@
 @import "normalize";
 @import "stylesheets/semantic";
+@import "projects";
+@import "navs";
+@import "about";
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
 @charset "utf-8";
 
-$orange: #dd6126;
+$orange: #fd513b;
 $purple: #290823;
 $green: #05756f;
+$blue: #0f7998;
 $display-font: 'Amatic SC';
+$box-shadow: -2px 2px 20px #7C7C7D;
 
 body {
-  background: url("/images/background.png") center/100%;
+  background: url("/images/whitesand.png");
+  height: 500%;
+  -webkit-text-size-adjust: 100%;  //fix for iOS
 }
 
-.ui.segment {
-  padding-top: 40px;
-  padding-bottom: 40px;
+
+html {
+  background: linear-gradient(to bottom right, #0f7988 0%, #c5e2bb 90%, #f9f2cf 100%) no-repeat center center fixed;
 }
 
-.ui.menu {
-  .item {
-    font-family: $display-font;
-    font-size: 2em;
-    color: $purple;
-    font-weight: bold;
-    padding: 0px 20px 4px 20px !important;
+nav + section {
+  clear: both;
+}
+
+.bground {
+  height: 500px;
+  background-color: white;
+  opacity: 0.25;
+  position: relative;
+  top: -595px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 723px) {
+  .bground {
+    height: 1325px;
+    top: -1325px;
   }
 }
 
-.ui.secondary.vertical.pointing.menu {
-  border: none;
+.header {
+  font-family: $display-font;
+  color: $purple;
+  font-size: 3em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-.ui.text.container {
-  max-width: 50%;
+.ui.stackable.grid {
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
+
+.row {
+  margin-top: 0.5em;
+  max-width: 1280px
+  // background: url("/images/whitesand.png");
+}
+
+a {
+  color: $green;
+}
+
 
 .ui.secondary.vertical.pointing.menu {
   margin-top: 142px;
 }
 .ui.image.small {
   width: 260px;
-  margin-top: -175px;
+  // margin-top: -175px;
 }
 
-.ui.secondary.pointing.menu .active.item {
-  border-image: url("/images/line.svg") 0 0 10 0 repeat;
-  border-image-width: 12px;
+.ui.image.medium {
+  width: 400px;
+  // margin-top: -175px;
 }
 
 .ui.secondary.pointing.menu {
-  border: none;
+  // border: none;
 }
 
 h1,h3 {
@@ -59,9 +92,9 @@ h1,h3 {
 
 h3 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 2em;
   color: $green;
-  letter-spacing: 0.75px;
+  letter-spacing: 1px;
   margin-top: -8px;
 }
 
@@ -72,18 +105,10 @@ h1 {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 4em;
+  margin-top: 2em;
 }
 
-.ui.vertical.stripe.segment.inverted {
-  background-image: url("/images/background.png"), linear-gradient( to bottom right, #0f7988, #c5e2bb);
-  opacity: 0.85;
-}
-
-.headshot {
-  border: 10px solid $orange;
-
-}
 
 i[class*="fa-"] {
   color: #05756f;
@@ -99,4 +124,3 @@ footer {
 a:hover, a:active, i[class*="fa-"]:hover, i[class*="fa-"]:active {
   color: $orange;
 }
-

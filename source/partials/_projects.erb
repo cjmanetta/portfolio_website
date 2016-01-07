@@ -1,30 +1,24 @@
-<section class="ui cards centered"  id="projects">
+<section class="row">
   <% data.local_data.projects.each do |project, attrs| %>
-    <div class="card">
-      <div class="content">
-        <div class="header"><%= attrs.name %></div>
+    <article class="project column">
+      <h1><%= attrs.name %></h1>
+      <div class="ui small image">
+        <img src="<%= attrs.screenshot %>" alt="<%= attrs.name %>">
       </div>
-      <div class="image">
-        <img src="<%= attrs.screenshot %>">
-      </div>
-      <div class="content">
+      <section class="info">
         <% if !attrs.tags.empty? %>
-          <div class="meta">
+          <div class="ui mini labels tags">
             <% attrs.tags.each do |tag| %>
-              <div class="ui label mini"><%= tag %></div>
+              <div class="ui label"><%= tag %></div>
             <% end %>
           </div>
         <% end %>
-        <div class="description">
-          <%= attrs.description %>
-        </div>
-      </div>
-      <div class="extra content">
-        <span class="right floated"><%= attrs.extra %></span>
-        <span>
+        <p><%= attrs.description %></p>
+        <% if attrs.tags.include?("develop") %>
           <a href="<%= attrs.github %>"><i class="fa fa-code"> code</i></a>
-        </span>
-      </div>
-    </div>
+        <% end %>
+        <div class="extra"><%= attrs.extra %></div>
+      </section>
+    </article>
   <% end %>
 </section>

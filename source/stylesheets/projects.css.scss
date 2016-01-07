@@ -1,0 +1,35 @@
+$orange: #fd513b;
+$purple: #290823;
+$green: #05756f;
+$blue: #0f7998;
+$display-font: 'Amatic SC';
+$box-shadow: -2px 2px 20px #7C7C7D;
+
+.project {
+  img {
+    border-radius: 2px;
+  }
+
+  .info {
+    text-align: left;
+    width: 260px;
+    margin: 0.5em auto;
+
+    p {
+      padding: 2px;
+    }
+
+    .extra {
+      float: right;
+      color: gray;
+      font-size: 0.85em;
+    }
+  }
+
+  .tags {
+    .ui.label {
+      background-color: $green;
+      color: white;
+    }
+  }
+}

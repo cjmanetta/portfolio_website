@@ -20,3 +20,12 @@
     :screenshot: images/smarttext.png
     :description: SmartText is an application built in Express on Node.js with a MongoDB database and a React frontend. It allows teachers to see their students highlight supporting evidence for reading comprehension questions directly in the text on their screens.
     :extra: "Production Timeline: 7 days"
+  :mariposa:
+    :name: "Mariposa Baking Website"
+    :tags:
+      - design
+      - content
+    :url: pickup.mariposabaking.com
+    :screenshot: images/mariposa_website.png
+    :description: "Using the Shopify ecommerce framework, I customized a basic theme to fit the needs of our gluten-free bakery. Over 3 years I shot and edited photographs, updated and authored content and tweaked Shopify templates to fit our brand identity and increase the funcitonality of the site."
+    :extra: "in collaboration with Tracy Sailors, Dana Neufeld & Marisa Robb"

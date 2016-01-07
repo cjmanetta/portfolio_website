@@ -1,0 +1,42 @@
+$orange: #fd513b;
+$purple: #290823;
+$green: #05756f;
+$blue: #0f7998;
+$display-font: 'Amatic SC';
+$box-shadow: -2px 2px 20px #7C7C7D;
+
+@media only screen and (max-width: 1100px) {
+    nav.social {
+      display: none;
+    }
+  }
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  float: right;
+  margin-bottom: 4em;
+  li {
+    font-family: $display-font;
+    font-size: 2em;
+    color: $purple;
+    font-weight: bold;
+    padding: 0px 20px 4px 20px;
+    float: left;
+  }
+}
+
+nav.social {
+  position: fixed;
+  top: 25%;
+  left: -40px;
+  li {
+    margin-bottom: 2px;
+    float: none;
+    i {
+      font-size: 1.25em;
+    }
+  }
+}

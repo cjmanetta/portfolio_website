@@ -2,19 +2,30 @@
 :title: Charlotte Manetta
 ---
 <main class="container">
-<%= partial("partials/nav") %>
+  <%= partial("partials/nav") %>
+  <nav class="social">
+      <ul>
+        <li>
+          <a class="item" href="https://github.com/cjmanetta"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a class="item" href="https://www.linkedin.com/in/charlottemanetta"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </nav>
 
-  <section class="ui vertical masthead center aligned">
-    <div class="ui left attached vertical compact secondary pointing menu">
-    <a class="item" href="https://github.com/cjmanetta"><i class="fa fa-github"></i>
-    <a class="item" href="https://www.linkedin.com/in/charlottemanetta"><i class="fa fa-linkedin"></i></a>
-  </div>
-      <img class="ui circular centered image headshot small" src="/images/headshot.png" alt="Charlotte Manetta">
-      <article class="ui text center aligned container" id="#about">
-        <%= partial("partials/about") %>
-      </article>
+  <section class="ui two column stackable center aligned grid" id="about">
+    <article class="column">
+      <img class="ui circular centered image headshot medium" src="/images/headshot.png" alt="Charlotte Manetta">
+    </article>
+    <article class="column">
+      <%= partial("partials/about") %>
+    </article>
   </section>
-  <section class="ui vertical inverted stripe segment projects" id="#projects">
+
+  <section class="ui three column stackable center aligned grid" id="projects">
     <%= partial("partials/projects") %>
   </section>
+  <div class="bground"> </div>
+  <!-- position div using  media queries for diff break points-->
 </main>
