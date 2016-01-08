@@ -1,0 +1,24 @@
+.headshot { border: 10px solid $orange;}
+
+.blurb {
+  text-align: center;
+  max-width: 55%;
+  .tagline { margin: 12px 0 20px 0;}
+  p {
+    text-align: left;
+  }
+  a { font-size: 1.5em;}
+}
+
+@media only screen and (max-width: 723px) {
+    .headshot {
+      margin: 0px auto;
+      float: none;
+    }
+    .blurb {
+      max-width: 75%;
+      margin: 0px auto;
+      p { text-align: center;}
+      a { font-size: 1.25em;}
+    }
+  }

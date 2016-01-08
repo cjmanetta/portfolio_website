@@ -1,0 +1,88 @@
+body {
+  background: url("/images/whitesand.png");
+  height: $large-screen-height;
+}
+
+html {
+  background: linear-gradient(to bottom right,
+    $blue 0%,
+    #c5e2bb 90%,
+    #f9f2cf 100%) no-repeat center center fixed;
+}
+
+/*******************************
+            structure
+*******************************/
+nav + section { clear: both;}
+
+@media only screen and (max-width: 723px) {
+  // .bground {
+  //   height: 1325px;
+  //   top: -1325px;
+  // }
+  body { height: $small-screen-height;}
+}
+
+.ui.stackable.grid {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+section {
+  margin-bottom: 4em;
+  margin-top: 2em;
+}
+
+.row {
+  margin-top: 0.5em;
+  max-width: 1280px
+}
+
+/*******************************
+            imgs
+*******************************/
+
+.ui.image.small { width: 260px;}
+
+.ui.image.medium { width: 400px;}
+
+/*******************************
+          typography
+*******************************/
+
+h1,h3 {
+  font-family: $display-font;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: 700;
+  color: $green;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: $purple;
+  letter-spacing: 1px;
+}
+
+
+i[class*="fa-"] {
+  color: #05756f;
+  }
+
+footer {
+  i[class*="fa-"] {
+  font-size: 200%;
+  }
+}
+
+/*******************************
+          links
+*******************************/
+
+a { color: $green;}
+
+a:hover, a:active, i[class*="fa-"]:hover, i[class*="fa-"]:active {
+  color: $orange;
+}
