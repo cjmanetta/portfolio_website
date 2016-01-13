@@ -13,7 +13,7 @@
     :description: footie is a points tracking application built in Rails and React for managing contests or player progress over the course of a sports season.
     :extra: "Production Timeline: 3 weeks"
   :smarttext:
-    :name: SmartText
+    :name: smarttext
     :tags:
       - develop
     :github: https://github.com/amjacobowitz/SmartText
@@ -21,11 +21,11 @@
     :description: SmartText is an application built in Express on Node.js with a MongoDB database and a React frontend. It allows teachers to see their students highlight supporting evidence for reading comprehension questions directly in the text on their screens.
     :extra: "Production Timeline: 7 days"
   :mariposa:
-    :name: "Mariposa Baking Website"
+    :name: "mariposa baking website"
     :tags:
       - design
       - content
     :url: pickup.mariposabaking.com
     :screenshot: images/mariposa_website.png
-    :description: "Using the Shopify ecommerce framework, I customized a basic theme to fit the needs of our gluten-free bakery. Over 3 years I shot and edited photographs, updated and authored content and tweaked Shopify templates to fit our brand identity and increase the funcitonality of the site."
+    :description: "Using the Shopify ecommerce framework, I customized a basic theme to fit the needs of our gluten-free bakery. Over 3 years I shot and edited photographs, updated and authored content and tweaked Shopify templates to fit our brand identity and increase the functionality of the site."
     :extra: "in collaboration with Tracy Sailors, Dana Neufeld & Marisa Robb"

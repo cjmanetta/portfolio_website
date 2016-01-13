@@ -1,6 +1,6 @@
-<section class="row">
+<div class="row">
   <% data.local_data.projects.each do |project, attrs| %>
-    <article class="project column">
+    <article class="column">
       <h1><%= attrs.name %></h1>
       <div class="ui small image">
         <img src="<%= attrs.screenshot %>" alt="<%= attrs.name %>">
@@ -21,4 +21,4 @@
       </section>
     </article>
   <% end %>
-</section>
+</div>

@@ -16,10 +16,6 @@ html {
 nav + section { clear: both;}
 
 @media only screen and (max-width: 723px) {
-  // .bground {
-  //   height: 1325px;
-  //   top: -1325px;
-  // }
   body { height: $small-screen-height;}
 }
 
@@ -52,30 +48,21 @@ section {
 
 h1,h3 {
   font-family: $display-font;
-  font-size: 2em;
-}
-
-h3 {
   font-weight: 700;
-  color: $green;
-  letter-spacing: 2px;
 }
 
 h1 {
-  color: $purple;
-  letter-spacing: 1px;
+  color: $trans-white-85;
+  font-size: 2.5em;
+  letter-spacing: 0.5px;
 }
 
-
-i[class*="fa-"] {
-  color: #05756f;
-  }
-
-footer {
-  i[class*="fa-"] {
-  font-size: 200%;
-  }
+h3 {
+  font-size: 2em;
+  color: $green;
 }
+
+i { color: $green;}
 
 /*******************************
           links
@@ -83,6 +70,4 @@ footer {
 
 a { color: $green;}
 
-a:hover, a:active, i[class*="fa-"]:hover, i[class*="fa-"]:active {
-  color: $orange;
-}
+a:hover, a:active, i:hover, i:active { color: $orange;}

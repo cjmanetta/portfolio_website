@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css);
 
 $orange: #fd513b;
 $purple: #290823;
 $green: #05756f;
 $blue: #0f7998;
+$trans-white-25: rgba(255, 255, 255, 0.25);
+$trans-white-85: rgba(255, 255, 255, 0.85);
 $display-font: 'Amatic SC';
-$box-shadow: -2px 2px 20px #7C7C7D;
+$box-shadow: -2px 2px 15px rgba(124, 124, 125, 0.39);
 $large-screen-height: 1185px;
 $small-screen-height: 2250px;
