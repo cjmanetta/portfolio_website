@@ -15,7 +15,7 @@
     :name: smarttext
     :tags:
       - develop
-    :github: https://github.com/amjacobowitz/SmartText
+    :github: https://github.com/cjmanetta/SmartText
     :screenshot: images/smarttext.png
     :description: SmartText is an application built in Express on Node.js with a MongoDB database and a React frontend. It allows teachers to see their students highlight supporting evidence for reading comprehension questions directly in the text on their screens.
   :mariposa:
